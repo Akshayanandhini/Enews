@@ -1,0 +1,502 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/*#tophead {
+    color: white;
+    background-color: black;
+    background-image: url('fashion3.png');
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}*/
+
+#tophead {
+    color: white;
+    background-color: black; 
+    
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes example {
+    0%   {background-color:  black;;}
+    25%  {background-color:blue}
+    50%  {background-color: black;}    
+    75% {background-color:yellow}
+    100%  {background-color: black;}
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    width: 400%; 
+}
+
+.section {
+    min-width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: azure;
+    background-image: url("home5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.overlay-container {
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 200px;
+    max-width: 75%; 
+    margin: 35px auto; 
+    border-radius: 10px; 
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+.homesec-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+#homesec, #homesec2 {
+    /*background-color: white;*/
+    color: black;
+    
+    margin-bottom: -100px;
+    margin-top: -160px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+
+#homesec {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: rgba(0, 0, 255, 0.5);
+
+
+    /*background-color: white;*/
+    margin-left: -120px; 
+    width: 50% 
+    padding-top: 10px; 
+    padding-right: 150px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    
+}
+
+#homesec2 {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: rgba(0, 0, 255, 0.5);
+
+   /*background-color: white;*/
+    padding: 160px 20px;
+    margin-left: 170px; 
+}
+
+/* #homesec2 {
+    background-color: cornsilk; 
+    padding: 160px 20px;
+    margin-left: 170px; 
+    animation-name: color-change; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+    0%   {background-color: cornsilk;}
+    25%  {background-color: lightcoral;}
+    50%  {background-color: lightblue;}
+    100% {background-color: lightgreen;}
+}
+*/
+
+  
+
+
+
+/* Left-aligned container 
+.left-container {
+    max-width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);  Semi-transparent background 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+*/
+/* Right-aligned info 
+.right-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0); Semi-transparent background 
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+*/
+.right-info p {
+    margin: 5px 0;
+}
+
+
+.sports {
+    background-image: url("sports2.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#sportsdiv {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 250px;
+    max-width: 75%; 
+    margin: 5px auto; 
+    border-radius: 10px; 
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.sportsec-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+}
+
+.left-section {
+    flex: 1; 
+    margin-right: 20px; 
+    
+}
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+.image-container img {
+    width: 23%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+.right-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.top-right{
+    flex: 1; 
+    margin-bottom: 10px; 
+    background-image: url("olympics.jpg");
+}
+.bottom-right {
+    flex: 1;
+    margin-bottom: 10px;
+    max-height: 300px; 
+    overflow-y: auto; 
+    padding: 10px;
+    background-image: url("olympics.jpg");
+    
+}
+
+
+/* Optional additional styling */
+.left-section, .top-right, .bottom-right {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#sportst {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+.th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: blue;
+}
+
+.th {
+    background-color: #f2f2f2;
+    
+}
+
+.img {
+    width: 20px; 
+    height: auto;
+    vertical-align: middle; 
+}
+
+.fashion {
+    background-image: url("fashion6.png");
+}
+#fashionsec {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 250px;
+    max-width: 75%; 
+    margin: 5px auto; 
+    border-radius: 10px; 
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.fashion-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+.fleft-section, .fright-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.ftop-left, .fbottom-left, .ftop-right, .fbottom-right {
+    flex: 1; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color: whitesmoke; 
+    color: black; 
+    border-radius: 10px; 
+}
+
+.fbottom-left, .fbottom-right {
+    margin-bottom: 0; 
+}
+
+.ftop-left{
+    background-image: url("fashion2.jpeg");
+}
+.fbottom-right{
+    background-image: url("fashion2.jpeg");
+}
+.fimage-container img {
+    width: 95%; 
+    height: 310px; 
+    border-radius: 5px; 
+   
+}
+.ftop-right{
+    background-color: black;
+}
+.fbottom-left {
+    display: flex; 
+    gap: 10px; 
+    padding: 10px; 
+    background-color: black;
+}
+
+.fimage-container2 {
+    display: flex; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+.fimage-container2 img {
+    width: 50%; 
+    height: 310px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+
+
+
+.technology {
+    background-image: url("tech2.png");
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+#techsec {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 20px; 
+    max-width: 75%; 
+    margin: 5px auto; 
+    border-radius: 10px; 
+    color: black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    display: flex; 
+    gap: 20px; 
+}
+
+
+#techsec > div {
+    flex: 1; 
+    min-width: 0; 
+}
+
+
+.tleft-section {
+    background-color:white; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+.tright-section {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+.ttop-right {
+    flex: 1; 
+    background-color:black; 
+    padding: 1px; 
+    border-radius: 10px; 
+    
+}
+.ttop-right video {
+    width: 100%; 
+    height: 500px; 
+    max-height: 300px; 
+    border-radius: 5px; 
+}
+
+
+.tbottom-right {
+    flex: 1; 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+.tbottom-right {
+    flex: 1; 
+    background-color: #555; 
+    padding: 10px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.tbottom-right video {
+    width: 100%; 
+    height: 500px; 
+    max-height: 300px; 
+    border-radius: 5px; 
+}
+
+#feedback-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#feedback-form-wrapper {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#feedback-form h2 {
+    margin-top: 0;
+}
+
+#feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#feedback-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#feedback-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+#feedback-form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
